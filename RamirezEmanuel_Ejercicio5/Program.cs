@@ -33,3 +33,11 @@ if  (solicitante==1 || historialcrediticio==4)
 {
     fiador = true;
 }
+if (salario>=0 && meses>=0 && montosolicitado>=0 && historialcrediticio>=1 && historialcrediticio<=4)
+{
+
+}
+else
+{
+    Console.WriteLine("Datos ingresados no válidos");
+}
