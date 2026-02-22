@@ -35,7 +35,24 @@ if  (solicitante==1 || historialcrediticio==4)
 }
 if (salario>=0 && meses>=0 && montosolicitado>=0 && historialcrediticio>=1 && historialcrediticio<=4)
 {
+    switch (solicitante)
+    {
+        case 1:
 
+            break;
+        case 2:
+
+            break;
+        case 3:
+
+            break;
+            case 4:
+
+            break;
+        default:
+            Console.WriteLine("Solicitante no válido");
+            break;
+    }
 }
 else
 {
