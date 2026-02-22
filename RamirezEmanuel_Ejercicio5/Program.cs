@@ -17,6 +17,8 @@ int meses=int.Parse(Console.ReadLine());
 Console.WriteLine("");
 Console.WriteLine("Ingrese el monto solicitado: ");
 Console.WriteLine("");
+double montosolicitado = double.Parse(Console.ReadLine());
+Console.WriteLine("");
 Console.WriteLine("Ingrese el Historial crediticio: ");
 Console.WriteLine("");
 Console.WriteLine("1. Excelente");
@@ -25,8 +27,6 @@ Console.WriteLine("3. Regular");
 Console.WriteLine("4. Malo");
 Console.WriteLine("");
 int historialcrediticio=int.Parse(Console.ReadLine());
-Console.WriteLine("");
-double montosolicitado=double.Parse(Console.ReadLine());
 Console.WriteLine("");
 bool fiador = false;
 if  (solicitante==1 || historialcrediticio==4)
