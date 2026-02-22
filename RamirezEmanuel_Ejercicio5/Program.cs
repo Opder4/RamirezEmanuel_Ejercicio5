@@ -7,7 +7,7 @@ Console.WriteLine("4. Estudiante");
 Console.WriteLine("");
 int solicitante=int.Parse(Console.ReadLine());
 Console.WriteLine("");
-Console.WriteLine("Ingrese el salario mensual: ");
+Console.WriteLine("Ingrese el salario mensual (Q): ");
 Console.WriteLine("");
 double salario=double.Parse(Console.ReadLine());
 Console.WriteLine("");
@@ -38,15 +38,85 @@ if (salario>=0 && meses>=0 && montosolicitado>=0 && historialcrediticio>=1 && hi
     switch (solicitante)
     {
         case 1:
-
-            break;
+            if (historialcrediticio==1)
+            {
+                if (salario>=1000 && meses>=6)
+                {
+                    Console.WriteLine("Estado: Aprobado");
+                    Console.WriteLine("Razón: Cumple con los requisitos");
+                }
+                else if (salario>=1000 || meses>=6)
+                {
+                    Console.WriteLine("Estado: Aprobado con condición");
+                    Console.WriteLine("Razón: No cumple con todos los requisitos ideales");
+                }
+                else
+                {
+                    Console.WriteLine("Estado: Rechazado");
+                    Console.WriteLine("Razón: No cumple con ningun requisito");
+                }
+            }
+            else if (historialcrediticio==2)
+            {
+                if (salario >= 1500 && meses >= 12)
+                {
+                    Console.WriteLine("Estado: Aprobado");
+                    Console.WriteLine("Razón: Cumple con los requisitos");
+                }
+                else if (salario >= 1500 || meses >= 12)
+                {
+                    Console.WriteLine("Estado: Aprobado con condición");
+                    Console.WriteLine("Razón: No cumple con todos los requisitos ideales");
+                }
+                else
+                {
+                    Console.WriteLine("Estado: Rechazado");
+                    Console.WriteLine("Razón: No cumple con ningun requisito");
+                }
+            }
+            else if (historialcrediticio==3)
+            {
+                if (salario >= 3000 && meses >= 18)
+                {
+                    Console.WriteLine("Estado: Aprobado");
+                    Console.WriteLine("Razón: Cumple con los requisitos");
+                }
+                else if (salario >= 3000 || meses >= 18)
+                {
+                    Console.WriteLine("Estado: Aprobado con condición");
+                    Console.WriteLine("Razón: No cumple con todos los requisitos ideales");
+                }
+                else
+                {
+                    Console.WriteLine("Estado: Rechazado");
+                    Console.WriteLine("Razón: No cumple con ningun requisito");
+                }
+            }
+            else if (historialcrediticio==4)
+            {
+                if (fiador && montosolicitado<1000)
+                {
+                    Console.WriteLine("Estado: Aprobado con condición");
+                    Console.WriteLine("Razón: Tiene un mal historial crediticio.");
+                }
+                else
+                {
+                    Console.WriteLine("Estado: Rechazado");
+                    Console.WriteLine("Razón: No cumple con ningun requisito");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Error");
+            }
+                break;
         case 2:
 
             break;
         case 3:
 
             break;
-            case 4:
+        case 4:
 
             break;
         default:
