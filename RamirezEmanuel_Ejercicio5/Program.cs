@@ -31,7 +31,20 @@ Console.WriteLine("");
 bool fiador = false;
 if  (solicitante==1 || historialcrediticio==4)
 {
-    fiador = true;
+    Console.WriteLine("Tiene fiador? (s/n)");
+    string respuestafiador=Console.ReadLine();
+    if (respuestafiador=="s")
+    {
+        fiador = true;
+    }
+    else if (respuestafiador=="n")
+    {
+
+    }
+    else
+    {
+        Console.WriteLine("Respuesta inválida");
+    }
 }
 if (salario>=0 && meses>=0 && montosolicitado>=0 && historialcrediticio>=1 && historialcrediticio<=4)
 {
