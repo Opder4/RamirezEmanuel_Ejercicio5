@@ -278,3 +278,4 @@ else
 {
     Console.WriteLine("Datos ingresados no válidos");
 }
+Console.WriteLine("");
